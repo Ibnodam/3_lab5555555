@@ -1,0 +1,47 @@
+﻿<Window x:Class="_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="707*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_header"  Margin="59,30,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_horizont" Margin="59,301,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_coor_y" Margin="59,215,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_coor_x" Margin="59,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_vertical" Margin="348,30,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+        <TextBox HorizontalAlignment="Left" Height="47" FontSize="20" x:Name="tb_color" Margin="348,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="226" Grid.Column="1"/>
+
+
+
+
+
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15"  Margin="59,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Grid.Column="1"><Run Text="Введите заголовок окна"/><Run Language="ru-ru" Text=":"/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="348,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Grid.Column="1"><Run Language="ru-ru" Text="Введите цвет окна:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="348,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Grid.Column="1"><Run Language="ru-ru" Text="Введите размер по вертикали:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="59,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Grid.Column="1"><Run Text="Введите размер по горизонтали"/><Run Language="ru-ru" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="59,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Grid.Column="1"><Run Language="ru-ru" Text="Введите координату у:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="59,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Grid.Column="1"><Run Language="ru-ru" Text="Введите координату "/><Run Text="x"/><Run Language="ru-ru" Text=":"/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="348,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Grid.Column="1"><Run Text="Состояние: видимое "/><Run Text="(true/false)"/></TextBlock>
+        
+        <CheckBox Grid.Column="1" x:Name="cb_isvisible" Content="Видимое" HorizontalAlignment="Left" Margin="393,222,0,0" VerticalAlignment="Top" Height="40" Width="116"/>
+        <!--<TextBlock HorizontalAlignment="Left" Height="36" FontSize="15" Margin="348,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Grid.Column="1" Text="Состояние: с рамкой (true/false)"/>
+        <CheckBox Grid.Column="1" x:Name="cb_borderon" Content="С рамкой" HorizontalAlignment="Left" Margin="393,320,0,0" VerticalAlignment="Top" Height="40" Width="116"/>-->
+        <Button Grid.Column="1" Content="Подтвердить" HorizontalAlignment="Left" Height="50" Margin="237,374,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
